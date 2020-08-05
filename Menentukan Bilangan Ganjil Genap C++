@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	int size;
+	
+	cin >> size;
+	
+	//Menentukan Bilangan Ganjil
+	cout << "Deretan Bilangan Ganjil adalah : ";
+	for(int i=1; i <= size;i++) {
+		
+		if(i%2 == 1) {
+			cout << i << " ";
+		}
+	}
+	
+	cout << endl;
+	cout << "Deretan Bilangan Genap adalah : ";
+	
+	//Menentukan Bilangan Genap
+	for(int i=1; i <= size; i++) {
+		
+		if(i%2 == 0) {
+			cout << i << " ";
+		}
+		
+	}
+	
+	
+	
+}
