@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	int size = 3;
+	int energi;
+	int ans[size];
+	int rumus = 0;
+	
+	cin >> energi;
+	
+	for(int i=0; i < size; i++) {
+		cin >> ans[i];
+		
+		if(ans[i] < 0 && energi > 0) {
+			ans[i] = ans[i] * -1;
+			energi = energi - 1;
+		}
+		rumus = rumus + ans[i];
+	}
+	
+	cout << rumus;
+}
